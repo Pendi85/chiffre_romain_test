@@ -311,4 +311,15 @@ describe("Test Chiffres Romain", function () {
         // ALORS le nombre romain est XXVIII
         assert.equal(chiffreRomain, "XXVIII");
     });
+
+    it("ETANT donne le chiffre 29 QUAND on convertit le chiffre en nombre romain ALORS le nombre est XXIX", function () {
+        // Etant donne le chiffre 29
+        let chiffreArabe : number = 29;
+
+        // Quand on covertit le chiffre en nombre romain
+        let chiffreRomain : string = NombreRomain.convertirChiffreRomain(chiffreArabe);
+
+        // ALORS le nombre romain est XXIX
+        assert.equal(chiffreRomain, "XXIX");
+    });
 });
