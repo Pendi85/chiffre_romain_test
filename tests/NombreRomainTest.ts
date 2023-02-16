@@ -56,4 +56,15 @@ describe("Test Chiffres Romain", function () {
         // ALORS le nombre romain est V
         assert.equal(chiffreRomain, "V");
     });
+
+    it("ETANT donne le chiffre 6 QUAND on convertit le chiffre en nombre romain ALORS le nombre est VI", function () {
+        // Etant donne le chiffre 6
+        let chiffreArabe : number = 6;
+
+        // Quand on covertit le chiffre en nombre romain
+        let chiffreRomain : string = NombreRomain.convertirChiffreRomain(chiffreArabe);
+
+        // ALORS le nombre romain est VI
+        assert.equal(chiffreRomain, "VI");
+    });
 });
