@@ -199,4 +199,15 @@ describe("Test Chiffres Romain", function () {
         // ALORS le nombre romain est XVIII
         assert.equal(chiffreRomain, "XVIII");
     });
+
+    it("ETANT donne le chiffre 19 QUAND on convertit le chiffre en nombre romain ALORS le nombre est XIX", function () {
+        // Etant donne le chiffre 19
+        let chiffreArabe : number = 19;
+
+        // Quand on covertit le chiffre en nombre romain
+        let chiffreRomain : string = NombreRomain.convertirChiffreRomain(chiffreArabe);
+
+        // ALORS le nombre romain est XIX
+        assert.equal(chiffreRomain, "XIX");
+    });
 });
