@@ -288,4 +288,16 @@ describe("Test Chiffres Romain", function () {
         // ALORS le nombre romain est XXVI
         assert.equal(chiffreRomain, "XXVI");
     });
+
+
+    it("ETANT donne le chiffre 27 QUAND on convertit le chiffre en nombre romain ALORS le nombre est XXVII", function () {
+        // Etant donne le chiffre 27
+        let chiffreArabe : number = 27;
+
+        // Quand on covertit le chiffre en nombre romain
+        let chiffreRomain : string = NombreRomain.convertirChiffreRomain(chiffreArabe);
+
+        // ALORS le nombre romain est XXVII
+        assert.equal(chiffreRomain, "XXVII");
+    });
 });
