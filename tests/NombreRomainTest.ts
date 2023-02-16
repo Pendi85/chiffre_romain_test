@@ -188,4 +188,15 @@ describe("Test Chiffres Romain", function () {
         // ALORS le nombre romain est XVII
         assert.equal(chiffreRomain, "XVII");
     });
+
+    it("ETANT donne le chiffre 18 QUAND on convertit le chiffre en nombre romain ALORS le nombre est XVIII", function () {
+        // Etant donne le chiffre 18
+        let chiffreArabe : number = 18;
+
+        // Quand on covertit le chiffre en nombre romain
+        let chiffreRomain : string = NombreRomain.convertirChiffreRomain(chiffreArabe);
+
+        // ALORS le nombre romain est XVIII
+        assert.equal(chiffreRomain, "XVIII");
+    });
 });
