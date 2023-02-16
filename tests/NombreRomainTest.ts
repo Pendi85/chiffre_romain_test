@@ -221,4 +221,26 @@ describe("Test Chiffres Romain", function () {
         // ALORS le nombre romain est XX
         assert.equal(chiffreRomain, "XX");
     });
+
+    it("ETANT donne le chiffre 21 QUAND on convertit le chiffre en nombre romain ALORS le nombre est XXI", function () {
+        // Etant donne le chiffre 21
+        let chiffreArabe : number = 21;
+
+        // Quand on covertit le chiffre en nombre romain
+        let chiffreRomain : string = NombreRomain.convertirChiffreRomain(chiffreArabe);
+
+        // ALORS le nombre romain est XXI
+        assert.equal(chiffreRomain, "XXI");
+    });
+
+    it("ETANT donne le chiffre 22 QUAND on convertit le chiffre en nombre romain ALORS le nombre est XXII", function () {
+        // Etant donne le chiffre 22
+        let chiffreArabe : number = 22;
+
+        // Quand on covertit le chiffre en nombre romain
+        let chiffreRomain : string = NombreRomain.convertirChiffreRomain(chiffreArabe);
+
+        // ALORS le nombre romain est XXII
+        assert.equal(chiffreRomain, "XXII");
+    });
 });
