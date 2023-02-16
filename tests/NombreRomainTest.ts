@@ -377,4 +377,15 @@ describe("Test Chiffres Romain", function () {
         // ALORS le nombre romain est XXXIV
         assert.equal(chiffreRomain, "XXXIV");
     });
+
+    it("ETANT donne le chiffre 35 QUAND on convertit le chiffre en nombre romain ALORS le nombre est XXXV", function () {
+        // Etant donne le chiffre 35
+        let chiffreArabe : number = 35;
+
+        // Quand on covertit le chiffre en nombre romain
+        let chiffreRomain : string = NombreRomain.convertirChiffreRomain(chiffreArabe);
+
+        // ALORS le nombre romain est XXXV
+        assert.equal(chiffreRomain, "XXXV");
+    });
 });
