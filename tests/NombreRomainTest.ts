@@ -45,4 +45,15 @@ describe("Test Chiffres Romain", function () {
         // ALORS le nombre romain est IV
         assert.equal(chiffreRomain, "IV");
     });
+
+    it("ETANT donne le chiffre 5 QUAND on convertit le chiffre en nombre romain ALORS le nombre est V", function () {
+        // Etant donne le chiffre 5
+        let chiffreArabe : number = 5;
+
+        // Quand on covertit le chiffre en nombre romain
+        let chiffreRomain : string = NombreRomain.convertirChiffreRomain(chiffreArabe);
+
+        // ALORS le nombre romain est V
+        assert.equal(chiffreRomain, "V");
+    });
 });
