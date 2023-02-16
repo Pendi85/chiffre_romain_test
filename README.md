@@ -1,9 +1,12 @@
+
+# Projet
+
 Pour le projet de convertisseur de chiffres arabes en chiffres romains, nous avons choisi le langage TypeScript/JavaScript et le framework de test Mocha. 
 Pour ce projet nous avons sélectionné l’outil de CI Github Actions. 
 Ayant un projet de petite envergure, l'installation d’un outil “Heavyweight” serait superflu notamment au niveau du temps de configuration. 
 Github Actions permet une simplicité dans la mise en place d’une CI dans un projet.
 
-#Avantages :
+# Avantages :
 
 Grande communauté : GitHub est l'une des plateformes de développement les plus populaires au monde, et GitHub Actions bénéficie de la communauté active de développeurs qui s'y trouve.
 
@@ -11,7 +14,7 @@ Support pour les différents langages de programmation : GitHub Actions prend en
 
 Facile à configurer pour des projets à petite et moyenne envergure.
 
-#Défauts:
+# Défauts:
 
 Limitation de stockage : Les workflows GitHub Actions ont une limite de stockage pour les données de sortie, ce qui peut être un problème pour les projets qui génèrent de grandes quantités de données de sortie.
 
@@ -24,4 +27,4 @@ Entre les deux outils il y a beaucoup de similitudes, le choix de l’outil va s
 Conclusion :
  	Donc l’outil de CI de Github Actions paraît être le meilleur outil dans notre contexte de petit projet car il y a une simplicité d’intégration et de développement ce qui accélère la mise en place du projet sans compromettre la qualité de livraison.
 
-#Elouan MAINDRON, Marin TOSTIVINT, Imad Loughlimi
+# Elouan MAINDRON, Marin TOSTIVINT, Imad Loughlimi
