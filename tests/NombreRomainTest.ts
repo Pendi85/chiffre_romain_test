@@ -210,4 +210,15 @@ describe("Test Chiffres Romain", function () {
         // ALORS le nombre romain est XIX
         assert.equal(chiffreRomain, "XIX");
     });
+
+    it("ETANT donne le chiffre 20 QUAND on convertit le chiffre en nombre romain ALORS le nombre est XX", function () {
+        // Etant donne le chiffre 20
+        let chiffreArabe : number = 20;
+
+        // Quand on covertit le chiffre en nombre romain
+        let chiffreRomain : string = NombreRomain.convertirChiffreRomain(chiffreArabe);
+
+        // ALORS le nombre romain est XX
+        assert.equal(chiffreRomain, "XX");
+    });
 });
