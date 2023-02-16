@@ -155,4 +155,15 @@ describe("Test Chiffres Romain", function () {
         // ALORS le nombre romain est XIV
         assert.equal(chiffreRomain, "XIV");
     });
+
+    it("ETANT donne le chiffre 15 QUAND on convertit le chiffre en nombre romain ALORS le nombre est XV", function () {
+        // Etant donne le chiffre 15
+        let chiffreArabe : number = 15;
+
+        // Quand on covertit le chiffre en nombre romain
+        let chiffreRomain : string = NombreRomain.convertirChiffreRomain(chiffreArabe);
+
+        // ALORS le nombre romain est XV
+        assert.equal(chiffreRomain, "XV");
+    });
 });
