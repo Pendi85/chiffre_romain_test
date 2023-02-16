@@ -265,4 +265,16 @@ describe("Test Chiffres Romain", function () {
         // ALORS le nombre romain est XXIV
         assert.equal(chiffreRomain, "XXIV");
     });
+
+
+    it("ETANT donne le chiffre 25 QUAND on convertit le chiffre en nombre romain ALORS le nombre est XXV", function () {
+        // Etant donne le chiffre 25
+        let chiffreArabe : number = 25;
+
+        // Quand on covertit le chiffre en nombre romain
+        let chiffreRomain : string = NombreRomain.convertirChiffreRomain(chiffreArabe);
+
+        // ALORS le nombre romain est XXV
+        assert.equal(chiffreRomain, "XXV");
+    });
 });
