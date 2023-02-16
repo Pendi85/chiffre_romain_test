@@ -166,4 +166,15 @@ describe("Test Chiffres Romain", function () {
         // ALORS le nombre romain est XV
         assert.equal(chiffreRomain, "XV");
     });
+
+    it("ETANT donne le chiffre 16 QUAND on convertit le chiffre en nombre romain ALORS le nombre est XVI", function () {
+        // Etant donne le chiffre 16
+        let chiffreArabe : number = 16;
+
+        // Quand on covertit le chiffre en nombre romain
+        let chiffreRomain : string = NombreRomain.convertirChiffreRomain(chiffreArabe);
+
+        // ALORS le nombre romain est XVI
+        assert.equal(chiffreRomain, "XVI");
+    });
 });
